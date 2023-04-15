@@ -1,9 +1,0 @@
-/**
- * 
- */
-/**
- * @author Angjelo
- *
- */
-module HistogramGenerator {
-}
