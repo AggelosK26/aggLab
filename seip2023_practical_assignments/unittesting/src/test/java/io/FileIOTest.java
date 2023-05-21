@@ -1,16 +1,22 @@
 package io;
+
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.rules.ExpectedException;
 
 import static org.junit.Assert.assertArrayEquals;
-import static org.junit.Assert.fail;
 
+/**
+ * This class contains unit tests for the FileIO class.
+ */
 public class FileIOTest {
 
     @Rule
     public ExpectedException exceptionRule = ExpectedException.none();
 
+    /**
+     * Tests the normal case of reading a file.
+     */
     @Test
     public void test_ReadFile_NormalCase() {
         FileIO fileIO = new FileIO();
@@ -19,6 +25,9 @@ public class FileIOTest {
         assertArrayEquals(expected, actual);
     }
 
+    /**
+     * Tests the case of reading an empty file.
+     */
     @Test
     public void test_ReadFile_EmptyFile() {
         FileIO fileIO = new FileIO();
@@ -27,6 +36,9 @@ public class FileIOTest {
         fileIO.readFile("src/test/resources/empty.txt");
     }
 
+    /**
+     * Tests the case of reading a non-existent file.
+     */
     @Test
     public void test_ReadFile_NonExistentFile() {
         FileIO fileIO = new FileIO();
@@ -35,16 +47,15 @@ public class FileIOTest {
         fileIO.readFile("src/test/resources/nonexistent.txt");
     }
     
+    /**
+     * Tests the case of reading a file containing invalid entries.
+     */
     @Test
     public void test_ReadFileContainsInvalidEntries() {
         FileIO fileIO = new FileIO();
         String filepath = "src/test/resources/invalid.txt";
 
-//        exceptionRule.expect(NumberFormatException.class);
+        // Additional exception expectations or assertions can be added as needed
         fileIO.readFile(filepath);
     }
-    
-    
 }
-
-

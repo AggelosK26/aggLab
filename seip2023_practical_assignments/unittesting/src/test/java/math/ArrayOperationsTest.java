@@ -15,6 +15,9 @@ import static org.junit.Assert.assertArrayEquals;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
 
+/**
+ * This class contains unit tests for the ArrayOperations class.
+ */
 @RunWith(MockitoJUnitRunner.class)
 public class ArrayOperationsTest {
     FileIO fileIO = mock(FileIO.class);
@@ -46,8 +49,9 @@ public class ArrayOperationsTest {
         when(myMath.isPrime(9)).thenReturn(false);
     }
 
-
-
+    /**
+     * Tests the findPrimesInFile method.
+     */
     @Test
     public void test_FindPrimesInFile() {
         int[] expected = {2, 3, 5, 7};
