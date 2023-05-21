@@ -1,4 +1,4 @@
-package unittesting;
+package math;
 
 /**
 * The MathOperations provides simple arithmetic operations

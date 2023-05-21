@@ -2,6 +2,7 @@ package math;
 
 import static org.junit.Assert.assertEquals;
 
+import org.junit.Assert;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.rules.ExpectedException;
@@ -42,5 +43,25 @@ public class MyMathTest {
 
         int result1 = myMath.factorial(1);
         assertEquals(1, result1);
+    }
+    
+    @Test
+    public void test_IsPrimeWithPrimeNumber() {
+        MyMath myMath = new MyMath();
+        Assert.assertTrue(myMath.isPrime(2));
+        Assert.assertTrue(myMath.isPrime(3));
+    }
+
+    @Test
+    public void test_IsPrimeWithNonPrimeNumber() {
+        MyMath myMath = new MyMath();
+        Assert.assertFalse(myMath.isPrime(4));
+        Assert.assertFalse(myMath.isPrime(6));
+    }
+
+    @Test(expected = IllegalArgumentException.class)
+    public void test_IsPrimeWithNumberLessThan2() {
+        MyMath myMath = new MyMath();
+        myMath.isPrime(1);
     }
 }
