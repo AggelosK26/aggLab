@@ -23,7 +23,7 @@
 2. mvn package
 3. java -jar gradeshistogram/target/gradeshistogram-0.0.1-SNAPSHOT-jar-with-dependencies.jar grades.txt
 
-[Link to io Folder](seip2023_practical_assignments/unittesting/src/main/java/io)
-[Link to math Folder](seip2023_practical_assignments/unittesting/src/main/java/math)
-[Link to io Folder with the test cases](seip2023_practical_assignments/unittesting/src/test/java/io)
-[Link to math Folder with the test cases](seip2023_practical_assignments/unittesting/src/test/java/math)
+- [Link to io Folder](seip2023_practical_assignments/unittesting/src/main/java/io)
+- [Link to math Folder](seip2023_practical_assignments/unittesting/src/main/java/math)
+- [Link to io Folder with the test cases](seip2023_practical_assignments/unittesting/src/test/java/io)
+- [Link to math Folder with the test cases](seip2023_practical_assignments/unittesting/src/test/java/math)
