@@ -9,7 +9,9 @@ import org.junit.runners.Suite;
 @RunWith(Suite.class)
 @Suite.SuiteClasses({
         FactorialParameterizedTest.class,
-        MyMathTest.class
+        MyMathTest.class,
+        ArrayOperationsTest.class,
+        ArithmeticOperationsTest.class
 })
 public class AllTests {
     // This class doesn't have any code as it is used solely for test suite configuration.
